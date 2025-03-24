@@ -189,13 +189,13 @@ $("#getUserTotalWithdrawn").html(formatCurrency(data_user[2]['result']) + "<span
 
 if(getUserTotalDeposits < 1000)
 {
-	procuser = 5.0;
+	procuser = 6.0;
 } else if(getUserTotalDeposits >= 100 && getUserTotalDeposits <199)
 {
-	procuser = 5.0;
+	procuser = 6.0;
 } else if(getUserTotalDeposits >= 200 && getUserTotalDeposits <499)
 {
-	procuser = 5.0;
+	procuser = 6.0;
 }
 
 
