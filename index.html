@@ -142,29 +142,29 @@ $("#cs").html(Number(val).toFixed(2) + " <span class='color-span'>POL</span>");
 if (!$('#name').val()) {
 $("#cs").html("0.50 <span class='color-span'>POL</span>");
 }
-var pj = 5.0;
+var pj = 6.0;
 var vs = 1.0;
 var оо = 0.02;
 if(val >= 1 && val < 200)
 {
-	pj = 5.0;
+	pj = 6.0;
 	vs = 1.0;
 	оо = 0.002;
 }
 else if(val >= 200 && val < 499)
 {
-	pj = 5.0;
+	pj = 6.0;
 	vs = 200.0;
 	оо = 0.04;
 } else if(val < 500)
 {
-	pj = 5.0;
+	pj = 6.0;
 	vs = 5.0;
 	оо = 0.002;
 }
  else
 {
-	pj = 5.0;
+	pj = 6.0;
 	оо = 0.008;
 }
 	
@@ -200,9 +200,9 @@ $("#ssc").html("If you don`t withdraw, your profit growth by +" + оо +"% daily
 $('#name').on('keydown', function () {
 
 var val = $("#name").val();
-$("#cs").html(val + " <span class='color-span'>MATIC</span>");
+$("#cs").html(val + " <span class='color-span'>POL</span>");
 if (!$('#name').val()) {
-$("#cs").html("0.1 <span class='color-span'>MATIC</span>");
+$("#cs").html("0.1 <span class='color-span'>POL</span>");
 }
 
 var pj = 0;
