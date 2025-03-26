@@ -182,10 +182,10 @@ var getUserTotalDeposits = formatCurrency(data_user[0]['result']);
 var getUserTotalDeposits1 = formatCurrency(data_user[0]['result']);
 var procuser = 0;
 
-$("#getUserTotalDeposits").html(formatCurrency(data_user[0]['result']) + "<span class='color-span'> MATIC</span>");
+$("#getUserTotalDeposits").html(formatCurrency(data_user[0]['result']) + "<span class='color-span'> POL</span>");
 $("#getUserTotalDeposits1").html(formatCurrency(data_user[0]['result']) + "<span class='color-span'> $POL</span>");
-$("#getUserAvailable").html(formatCurrency(data_user[1]['result']) + "<span class='color-span'> MATIC</span>");
-$("#getUserTotalWithdrawn").html(formatCurrency(data_user[2]['result']) + "<span class='color-span'> MATIC</span>");
+$("#getUserAvailable").html(formatCurrency(data_user[1]['result']) + "<span class='color-span'> POL</span>");
+$("#getUserTotalWithdrawn").html(formatCurrency(data_user[2]['result']) + "<span class='color-span'> POL</span>");
 
 if(getUserTotalDeposits < 1000)
 {
@@ -297,14 +297,14 @@ console.log(datas['status']);
 
 if(datas['status'] == 'success')
 {
-	Allert_Green("Successfully Bought!");	
+	Allert_Green("Successfully Staked!");	
 }
 
 	
   } catch (err) {
 	  
 	  console.log(err);
-$("#investButton").html("Bought");
+$("#investButton").html("Stake");
 
 
 	const account_s = getAccount()
@@ -331,7 +331,7 @@ Allert_Red("Not enough POL!");
 
 
   } finally {
-$("#investButton").html("Congrats");
+$("#investButton").html("Stake");
   }
 }
 
